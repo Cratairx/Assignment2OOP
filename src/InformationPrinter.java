@@ -1,9 +1,9 @@
 import java.time.LocalDate;
 
-public class TestClassWriteToFileMethod {
+public class InformationPrinter {
     LocalDate today = LocalDate.now();
 
-    public void testWriting(Member member){
+    public void printMember(Member member){
 
 
         System.out.println("Detta är en medlem");
@@ -15,10 +15,10 @@ public class TestClassWriteToFileMethod {
         System.out.println("Dagens datum: " + today);
 
     }
-
+    //  här skriver vi ut till pt filen varje medlem och att den tränade idag.
     public void writeToFile(Member member){
 
-        System.out.println("Medlem hittades men har inte betalat");
+
         WriteToPtFile writeToPtFile = new WriteToPtFile();
         writeToPtFile.writeToFile(member.getName());
         writeToPtFile.writeToFile(member.getPersonalId());
