@@ -5,11 +5,6 @@ public class Member extends Person{
     String lastPayed;
     String memberShip;
 
-    public Member() {
-        super();
-
-    }
-
     public String getBuyDate() {
         return buyDate;
     }

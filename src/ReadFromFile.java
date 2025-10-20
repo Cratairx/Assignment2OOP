@@ -32,7 +32,7 @@ public class ReadFromFile {
 
             while (true) {
 
-                // eftersom jag har gjort searcForMember till en boolean som tar in en input så
+                // eftersom jag har gjort searchForMember till en boolean som tar in en input så
                 // kommer denna att veta om den är true eller false beroende på vad användaren skriver
                 //  blir det false så breaker vi loopen och avslutar programmet
                 // annars fortsätter vi.

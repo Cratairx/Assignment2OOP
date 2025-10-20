@@ -12,6 +12,7 @@ public class InformationPrinter {
         System.out.println("Personnummer: " + member.getPersonalId());
         System.out.println("Köpedatum: " + member.getBuyDate());
         System.out.println("Sista betalning: " + member.getLastPayed());
+        System.out.println("Medlemsskap " + member.getMemberShip());
         System.out.println("Dagens datum: " + today);
 
     }
