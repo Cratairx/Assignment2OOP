@@ -35,11 +35,12 @@ public class Reception {
             // här använder vi LocalDate och parsar till dett LocalDate objekt för att java kan inte tolka datum igenom Strängar.
             LocalDate dateFromFile = LocalDate.parse(member.getLastPayed().trim());
 
-
+            // här söker vi efter namn eller personnummer.
             if (member.getName().equalsIgnoreCase(searchWord) || member.getPersonalId().equalsIgnoreCase(searchWord)) {
                 match = true;
 
-                // här kollar vi om datumen från filen + 1 år är efter idag.
+                // om namn eller person nummer stämmer
+                // kollar vi om datumen från filen + 1 år är efter idag. om inte är det en medlem som inte har betalat
                 if (dateFromFile.plusYears(1).isAfter(today)) {
 
                     InformationPrinter informationPrinter = new InformationPrinter();
@@ -56,6 +57,7 @@ public class Reception {
             }
 
         }
+        // om varken person nummer eller namn finns så finns inte medlemmen.
         if (!match) {
             System.out.println("Medlemen hitades inte.");
 

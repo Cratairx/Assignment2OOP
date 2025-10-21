@@ -22,10 +22,16 @@ public class ReadFromFile {
                 String rad = scanner.nextLine();
                 // här splittas text filen vid varje semi kolon och läggs i en array där ordet före första semikolonet blir [0]
                 String[] informationArrayFromFile = rad.split(";");
+
+                // Namn;Adress;Mailadress;Personnummer;Datum_köpt_gymmedlemskap;Datum_senast_uppdaterad;Medlemsnivå
+                //   0    1       2           3                   4                        5                6
+
                 // här skapar vi en nytt Member objekt med informationen från arrayen informationArrayFromFile
+
                 Member member = new Member(informationArrayFromFile[0], informationArrayFromFile[1], informationArrayFromFile[2], informationArrayFromFile[3], informationArrayFromFile[4], informationArrayFromFile[5], informationArrayFromFile[6]);
                 // här lägger vi till varje medlem i våran medlems lista.
                 reception.memberList.add(member);
+
 
             }
             Scanner scanner1 = new Scanner(System.in);
