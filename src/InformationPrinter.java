@@ -9,6 +9,7 @@ public class InformationPrinter {
         System.out.println("Detta är en medlem");
         System.out.println("Namn: " + member.getName());
         System.out.println("Adress: " + member.getAdress());
+        System.out.println("Email: " + member.getEmail());
         System.out.println("Personnummer: " + member.getPersonalId());
         System.out.println("Köpedatum: " + member.getBuyDate());
         System.out.println("Sista betalning: " + member.getLastPayed());
