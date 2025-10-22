@@ -14,7 +14,7 @@ public class Reception {
 
     public boolean searchForMember(Scanner input) {
 
-        System.out.println("Var god skriv in namn eller personummer");
+        System.out.println("Var god skriv in namn( Förnamn Efternamn) eller personummer(YYMMDD-XXXX)");
         searchWord = input.nextLine().trim();
         if (searchWord.equalsIgnoreCase("Exit")) {
             System.out.println("Avslutar programmet");
