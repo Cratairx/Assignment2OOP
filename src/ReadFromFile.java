@@ -40,7 +40,7 @@ public class ReadFromFile {
 
                 // eftersom jag har gjort searchForMember till en boolean som tar in en input så
                 // kommer denna att veta om den är true eller false beroende på vad användaren skriver
-                //  blir det false så breaker vi loopen och avslutar programmet
+                //  blir det false så breaker vi loopen och avslutar programmet. kan bara sättas till false då man skriver exit.
                 // annars fortsätter vi.
                 if (!reception.searchForMember(scanner1)) {
                     break;
